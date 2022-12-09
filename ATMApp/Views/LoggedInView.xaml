@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="ATMApp.Views.LoggedInView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ATMApp.Views"
+             mc:Ignorable="d" Background="White" FontFamily="Segoe UI Light" FontSize="24"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Deposit Button -->
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10 10 10 10"
+                HorizontalAlignment="Left" x:Name="DepositButton" MinWidth="150">
+            Insättning
+        </Button>
+
+        <!-- Withdrawal Button 
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10 10 10 10"
+                HorizontalAlignment="Left" x:Name="WithdrawalButton" MinWidth="150">
+            Uttag
+        </Button> -->
+
+        <!-- TransactionHistory Button 
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="10 10 10 10"
+                HorizontalAlignment="Left" x:Name="TransactionHistoryButton" MinWidth="150">
+            Historik
+        </Button> -->
+
+        <!-- Logout Button 
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="10 10 10 10"
+                HorizontalAlignment="Left" x:Name="LogOutButton" MinWidth="150">
+            Logga ut
+        </Button> -->
+
+    </Grid>
+</UserControl>
